@@ -17,7 +17,7 @@
           </div>
         </div>
         <v-card-text class="info-section">
-          <div v-for="(info, key) in itemInfo" :key="key" class="info">
+          <div v-for="(info, key) in itemInfo" :key="key" class="info-tag">
             <v-icon>{{ info.icon }}</v-icon>
             {{ info.value }}
           </div>
@@ -108,7 +108,7 @@ export default {
   justify-content: space-between;
 }
 
-.info {
+.info-tag {
   display: flex;
   align-items: center;
   margin-right: 10px;
